@@ -213,7 +213,6 @@ function DeleteNearestVehicle()
     local coords = GetEntityCoords(playerPed)
     local forward = GetEntityForwardVector(playerPed)
     
-    -
     local endCoords = vector3(
         coords.x + forward.x * 10.0,
         coords.y + forward.y * 10.0,
@@ -330,4 +329,5 @@ end)
 
 RegisterCommand('av', function()
     ExecuteCommand('adminvehicle')
+
 end)
